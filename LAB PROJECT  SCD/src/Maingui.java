@@ -1,11 +1,14 @@
 
 import java.awt.EventQueue;
+import java.awt.FlowLayout;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,12 +24,10 @@ import java.text.SimpleDateFormat;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-public class Maingui {
+public class Maingui{
 
 	private JFrame frame;
 	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
 	private JTextField textField_6;
 	private JTextField textField_7;
 	private JTextField textField_8;
@@ -39,11 +40,13 @@ public class Maingui {
 	private JTextField textField_11;
 	private JTextField textField_12;
 	private JTextField textField_13;
+	private JTextField textField_5;
 
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -198,16 +201,6 @@ public class Maingui {
 		panel_1.add(textField_10);
 		textField_10.setColumns(10);
 		
-		JButton btnNewButton = new JButton("CONVERT");
-		btnNewButton.setBounds(10, 140, 134, 23);
-		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 14));
-		panel_1.add(btnNewButton);
-		
-		JButton btnNewButton_1 = new JButton("CLOSE");
-		btnNewButton_1.setBounds(170, 140, 101, 23);
-		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 14));
-		panel_1.add(btnNewButton_1);
-		
 		JLabel label_8 = new JLabel("DRINKS");
 		label_8.setBounds(30, 215, 70, 20);
 		label_8.setFont(new Font("Tahoma", Font.PLAIN, 17));
@@ -239,9 +232,9 @@ public class Maingui {
 		btnNewButton_6.setFont(new Font("Tahoma", Font.PLAIN, 17));
 		panel_1.add(btnNewButton_6);
 		
-		JLabel lblNewLabel_1 = new JLabel("discount voucher code");
+		JLabel lblNewLabel_1 = new JLabel("DISCOUNT VOUCHER CODE");
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblNewLabel_1.setBounds(93, 11, 178, 40);
+		lblNewLabel_1.setBounds(30, 11, 228, 35);
 		panel_1.add(lblNewLabel_1);
 		
 		JPanel panel_2 = new JPanel();
@@ -250,34 +243,24 @@ public class Maingui {
 		frame.getContentPane().add(panel_2);
 		panel_2.setLayout(null);
 		
-		JLabel label_2 = new JLabel("COST OF DRINKS");
-		label_2.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		label_2.setBounds(10, 33, 192, 21);
-		panel_2.add(label_2);
+		JLabel lblAddress = new JLabel("ADDRESS");
+		lblAddress.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		lblAddress.setBounds(10, 33, 192, 21);
+		panel_2.add(lblAddress);
 		
-		JLabel label_3 = new JLabel("COST OF DELIVERY");
-		label_3.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		label_3.setBounds(10, 75, 192, 21);
-		panel_2.add(label_3);
-		
-		JLabel lblSpecialDiscountCode = new JLabel("SPECIAL DISCOUNT CODE");
-		lblSpecialDiscountCode.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblSpecialDiscountCode.setBounds(10, 117, 203, 21);
-		panel_2.add(lblSpecialDiscountCode);
+		JLabel lblPhoneNumber = new JLabel("PHONE NUMBER");
+		lblPhoneNumber.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		lblPhoneNumber.setBounds(10, 75, 192, 21);
+		panel_2.add(lblPhoneNumber);
 		
 		textField_3 = new JTextField();
-		textField_3.setBounds(196, 33, 117, 20);
+		textField_3.setBounds(136, 33, 177, 21);
 		panel_2.add(textField_3);
 		textField_3.setColumns(10);
 		
-		textField_4 = new JTextField();
-		textField_4.setColumns(10);
-		textField_4.setBounds(196, 78, 117, 20);
-		panel_2.add(textField_4);
-		
 		textField_5 = new JTextField();
 		textField_5.setColumns(10);
-		textField_5.setBounds(212, 120, 117, 20);
+		textField_5.setBounds(136, 78, 177, 21);
 		panel_2.add(textField_5);
 		
 		JPanel panel_3 = new JPanel();
