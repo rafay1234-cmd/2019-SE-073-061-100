@@ -4,7 +4,11 @@ public class OrderItem {
 private static String Name = null;
 
 {
-
+	String url="jbdc:mysql://localhost:3305//restaurentmanagementsystem";
+	String uname="root";
+	String pass="rafay1234567890";
+	String query="SELECT * FROM detailitem;";
+	
 	    String Id;
 	    String Name;
 	    double price;

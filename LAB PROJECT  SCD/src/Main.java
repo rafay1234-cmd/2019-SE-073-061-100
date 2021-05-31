@@ -57,13 +57,13 @@ static int x = 0;
 		         System.out.println("You win a discount coupon of:" +"$"
 		         + coupon*cost + " which is equal to " + coupon*100  +"% "  + "of your purchase");
 		    }
-		       discountcoupon obj = new discountcoupon();
-		    		   coupon r1 =new coupon(obj);
-		    		   discountvoucher r2=new discountvoucher(obj);
-		    		   r1.start();
-		    		   r2.start();
+		       discountcoupon obj1 = new discountcoupon();
+		    		   coupon r11 =new coupon(obj1);
+		    		   discountvoucher r21=new discountvoucher(obj1);
+		    		   r11.start();
+		    		   r21.start();
 		}
-} public void payment() {
+ public void payment() {
 		        	 payment cash1 = new payment(50.5);
 		        	 payment cash2 = new payment(20.45);
 		        	 payment credit1 =
@@ -81,4 +81,4 @@ static int x = 0;
 		        	 System.out.println();
 		        	 }
 		        	 
-		        	
+}
