@@ -1,4 +1,5 @@
 
+
 import java.awt.EventQueue;
 import java.awt.FlowLayout;
 
@@ -24,7 +25,7 @@ import java.text.SimpleDateFormat;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-public class Maingui{
+public class Maingui {
 
 	private JFrame frame;
 	private JTextField textField_3;
@@ -50,7 +51,7 @@ public class Maingui{
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Maingui window = new Maingui();
+					 Maingui window = new  Maingui();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -62,7 +63,7 @@ public class Maingui{
 	/**
 	 * Create the application.
 	 */
-	public Maingui() {
+	public  Maingui() {
 		initialize();
 	}
 
@@ -262,6 +263,17 @@ public class Maingui{
 		textField_5.setColumns(10);
 		textField_5.setBounds(136, 78, 177, 21);
 		panel_2.add(textField_5);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Credit Card", "Debit Card", "Easy Paisa", "Jazz Cash"}));
+		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		comboBox.setBounds(175, 126, 101, 22);
+		panel_2.add(comboBox);
+		
+		JLabel lblPaymentOption = new JLabel("PAYMENT OPTION");
+		lblPaymentOption.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		lblPaymentOption.setBounds(10, 126, 155, 20);
+		panel_2.add(lblPaymentOption);
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setBorder(new LineBorder(new Color(0, 0, 0), 5));
